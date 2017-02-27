@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#"
+     xml:base="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11">
+        <owl:imports rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf"/>
+        <owl:imports rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://geographicknowledge.de/vocab/AnalysisData.rdf#elementOf -->
+
+    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#elementOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#OriginParameter"/>
+        <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpaceRS"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://geographicknowledge.de/vocab/Workflow.rdf#input -->
+
+    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/Workflow.rdf#input">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#Script"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#DirectionParameter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#OriginParameter"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasDirectionParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasDirectionParameter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasParameter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#BaliDirectionalSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#DirectionParameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasOriginParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasOriginParameter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasParameter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#BaliDirectionalSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#OriginParameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasParameter">
+        <rdfs:domain rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefSys"/>
+        <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
+        <rdfs:comment xml:lang="en">a parameter of a reference system</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#Script"/>
+        <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefSys"/>
+        <rdfs:comment xml:lang="en">links to the reference system into which the script transforms</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#transforms -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#transforms">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#Script"/>
+        <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefSys"/>
+        <rdfs:comment xml:lang="en">links to the reference system that is transormed by the script</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#DirectionParameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#DirectionParameter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#Mountain -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#Mountain">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#DirectionParameter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#DirectionParameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#OriginObject -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#OriginObject"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#__:ego -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#__:ego"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#BaliDirectionalSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#BaliDirectionalSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#BalineseSpatialRefSys"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#BalineseSpatialRefSys -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#BalineseSpatialRefSys">
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefSys"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#DirectionParameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#DirectionParameter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#OriginParameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#OriginParameter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#Script -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#Script"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/page/Mount_Agung -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/page/Mount_Agung">
+        <rdf:type rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#Object"/>
+        <rdf:type rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Point"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#DirectionParameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#Kaja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#Kaja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#BaliDirectionalSystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#TransfProcedure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#TransfProcedure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#Script"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#egolocation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#egolocation">
+        <rdf:type rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf#Point"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#OriginParameter"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
