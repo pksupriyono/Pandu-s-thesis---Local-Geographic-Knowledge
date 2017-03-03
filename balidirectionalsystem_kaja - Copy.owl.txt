@@ -23,6 +23,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11">
         <owl:imports rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf"/>
+        <owl:imports rdf:resource="http://geographicknowledge.de/vocab/GISConcepts.rdf"/>
     </owl:Ontology>
     
 
@@ -65,15 +66,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasFromDirectionParameter -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasFromDirectionParameter">
-        <rdfs:comment xml:lang="en">links a frame of reference to an object indicating the &quot;from&quot; direction</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasDirectionParameter"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasGroundParameter -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasGroundParameter">
@@ -102,20 +94,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasToDirectionParameter -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasToDirectionParameter">
-        <rdfs:comment xml:lang="en">links a frame of reference to an object indicating the &apos;&apos;to&apos;&apos; direction</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasDirectionParameter"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#parameterOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#parameterOf">
-        <rdfs:range rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefSys"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#Parameter"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/pandu/ontologies/2017/1/untitled-ontology-11#hasParameter"/>
     </owl:ObjectProperty>
     
@@ -196,36 +177,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://geographicknowledge.de/vocab/AnalysisData.rdf#Object -->
-
-    <owl:Class rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#Object"/>
-    
-
-
-    <!-- http://geographicknowledge.de/vocab/AnalysisData.rdf#RefSys -->
-
-    <owl:Class rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#RefSys"/>
-    
-
-
-    <!-- http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference -->
-
-    <owl:Class rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference"/>
-    
-
-
-    <!-- http://geographicknowledge.de/vocab/GISConcepts.rdf#Point -->
-
-    <owl:Class rdf:about="http://geographicknowledge.de/vocab/GISConcepts.rdf#Point"/>
-    
-
-
-    <!-- http://geographicknowledge.de/vocab/Workflow.rdf#Operation -->
-
-    <owl:Class rdf:about="http://geographicknowledge.de/vocab/Workflow.rdf#Operation"/>
     
 
 
